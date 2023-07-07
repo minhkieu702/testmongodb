@@ -383,7 +383,7 @@ function Home({  collections, filterProductCollection }) {
 export default Home;
 
 export async function getStaticProps() {
-  const response = await fetch('http://localhost:3000/api/menu');
+  const response = await fetch('https://vercel.live/link/testmongodb-j4uo3m2qc-minhkieu702.vercel.app/api/menu');
   let data = await response.json();
   const products = data.products; // take the products attribute in the menu
   const collections = data.collections;

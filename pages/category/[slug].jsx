@@ -158,7 +158,7 @@ export default ShopLeft;
 
 
 export async function getStaticPaths() {
-  const response = await fetch('http://localhost:3000/api/menu');
+  const response = await fetch('https://vercel.live/link/testmongodb-j4uo3m2qc-minhkieu702.vercel.app/api/menu');
   let data = await response.json();  
   const categories = data.categories;
 
@@ -175,7 +175,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const response = await fetch('http://localhost:3000/api/menu');
+  const response = await fetch('https://vercel.live/link/testmongodb-j4uo3m2qc-minhkieu702.vercel.app/api/menu');
   let data = await response.json();
   // here is match the code with code of the collections in the url
   const categoryId = params.slug;

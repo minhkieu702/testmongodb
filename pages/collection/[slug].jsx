@@ -146,7 +146,7 @@ const pageCount = Math.ceil(data.length / itemsPerPage);
 export default shopleft;
 
 export async function getStaticPaths() {
-  const response = await fetch('http://localhost:3000/api/menu');
+  const response = await fetch('https://vercel.live/link/testmongodb-j4uo3m2qc-minhkieu702.vercel.app/api/menu');
   let data = await response.json(); 
   const collections = data.collections;
 
@@ -163,7 +163,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const response = await fetch('http://localhost:3000/api/menu');
+  const response = await fetch('https://vercel.live/link/testmongodb-j4uo3m2qc-minhkieu702.vercel.app/api/menu');
   let data = await response.json();
   // here is match the code with code of the collections in the url
   const collectionId = params.slug;
